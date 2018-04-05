@@ -1,6 +1,6 @@
 {
   "name": "generator-stencil",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "scaffolding tool for stencil compiler",
   "homepage": "",
   "author": {
@@ -8,31 +8,22 @@
     "email": "akash.gutha@outlook.com",
     "url": ""
   },
-  "files": [
-    "app",
-    "component",
-    "licenses"
-  ],
+  "files": ["app", "component", "licenses"],
   "main": "app/index.js",
-  "keywords": [
-    "stencil",
-    "js",
-    "javascript",
-    "yeoman-generator"
-  ],
+  "keywords": ["stencil", "js", "javascript", "yeoman-generator"],
   "devDependencies": {
-    "yeoman-test": "^1.7.0",
-    "yeoman-assert": "^3.1.0",
     "coveralls": "^2.13.1",
-    "nsp": "^2.6.3",
     "eslint": "^4.1.0",
-    "prettier": "^1.7.0",
-    "husky": "^0.14.3",
-    "lint-staged": "^4.2.1",
     "eslint-config-prettier": "^2.4.0",
-    "eslint-plugin-prettier": "^2.2.0",
     "eslint-config-xo": "^0.18.2",
-    "jest": "^22.0.6"
+    "eslint-plugin-prettier": "^2.2.0",
+    "husky": "^0.14.3",
+    "jest": "^22.0.6",
+    "lint-staged": "^4.3.0",
+    "nsp": "^2.6.3",
+    "prettier": "^1.11.1",
+    "yeoman-assert": "^3.1.0",
+    "yeoman-test": "^1.7.0"
   },
   "dependencies": {
     "chalk": "^2.1.0",
@@ -53,20 +44,11 @@
     "test": "jest"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.js": ["eslint --fix", "git add"],
+    "*.json": ["prettier --write", "git add"]
   },
   "eslintConfig": {
-    "extends": [
-      "xo",
-      "prettier"
-    ],
+    "extends": ["xo", "prettier"],
     "env": {
       "jest": true,
       "node": true
@@ -80,9 +62,7 @@
         }
       ]
     },
-    "plugins": [
-      "prettier"
-    ]
+    "plugins": ["prettier"]
   },
   "repository": "AkashGutha/generator-stencil",
   "license": "MIT"
