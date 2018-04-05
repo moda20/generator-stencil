@@ -1,6 +1,6 @@
 {
   "name": "generator-stencil",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "scaffolding tool for stencil compiler",
   "homepage": "",
   "author": {
@@ -38,7 +38,7 @@
     "testEnvironment": "node"
   },
   "scripts": {
-    "prepublish": "npx bump && nsp check",
+    "prepublish": "nsp check",
     "pretest": "eslint .",
     "precommit": "lint-staged",
     "test": "jest"
